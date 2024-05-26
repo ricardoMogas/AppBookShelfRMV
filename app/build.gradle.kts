@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.main.appbookshelfrmv"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.main.appbookshelfrmv"
@@ -50,6 +50,11 @@ android {
 }
 
 dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation("io.coil-kt:coil-compose:2.1.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
